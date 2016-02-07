@@ -1,0 +1,125 @@
+@import 'grid.import.less';
+@import 'color.import.less';
+@import 'fonts.import.less';
+@import 'rules.import.less';
+@import 'anim.import.less';
+
+@import 'base.import.less';
+@import 'nav.import.less';
+
+@import 'forms.import.less';
+@import 'tables.import.less';
+@import 'button.import.less';
+
+@import 'media.import.less';
+
+.page { width: 100%; min-height: 100%; }
+.home { 
+
+	.open;
+	font-size: 1.1em;
+	line-height: 1.3em;
+	color: @darkestgrey;
+
+	div { 
+		text-align: center;
+	}
+}
+	.nav {
+		height: 120px; 
+		.background-linear-gradient( 
+			@keygreen,
+			@keyblue
+			);
+	
+		.brand {
+			text-align: center;
+			color: white;
+			font-size: 4em;
+			.open; 
+			margin: 25px 0;
+			text-shadow: -1px -1px 0 @darkergrey;
+		}
+
+	}
+
+
+.home {
+	ul { .six; }
+	ul.wide { .twelve; margin-bottom: 50px; }
+
+		li { width: 100%; }
+		
+		span.emp, li:first-child, li:nth-child(2n+1) {
+			font-size: 1.5em;
+			color: @keyblue;
+			.open;
+			margin-top: 30px;
+		}
+			li:first-child { margin-top: 0px; }
+			.wide li:first-child { margin-top: 30px; }
+
+		li:nth-child(2n) {
+			font-size: 1.1em;
+			line-height: 1.3em;
+			.open;
+			color: @darkestgrey;
+			padding: 10px 25px;	
+		}
+
+	.explain { 
+		line-height: 1.7em; 
+		font-size: 1.3em; 
+		padding: 50px 10%;
+		text-align: justify;	
+	}
+
+
+	.bio {
+		padding:  70px;
+		background: lighten(@keygreen, 50%);
+		.box-shadow(inset 0 0 1px 0px @greenblue);
+		p { .sans; text-align: justify; padding: 0 10px; }
+	}
+}
+
+	span.title {
+		font-size: 1.5em;
+		color: @keyblue;
+		.bold;
+		border-bottom: 2px solid white;
+	}
+
+
+	.bioimage { 
+		p { margin-left: 200px; margin-top: 0; }
+
+	}
+		#anne { 
+		background: url('images/anne.jpg') left top no-repeat;
+		background-size: 200px;
+		}
+
+	.explain {
+		background: url('images/bridge.jpg') top left no-repeat;
+		background-size: cover;
+		min-height: 400px;
+		height: auto;
+		.box-shadow(inset 0px -1px 50px 20px white);
+	}
+
+
+	.shortcontact { 
+		margin-top: 70px; 
+		margin-left: 30px;
+		input { margin-bottom: 15px; }	
+	}
+	.contact form { 
+		width: 350px; 
+		margin: 30px auto; 
+	
+		input { margin-bottom: 15px; }
+		input[type=submit] { width: 100%; }
+	}
+	
+
