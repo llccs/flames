@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Quicksand|Oxygen|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Rokkitt:700|Rubik+Mono+One);
 
-.open { font-family: Quicksand, sans-serif; }
-.sans { font-family: Oxygen, sans-serif; }
-.bold { font-family: Montserrat, sans-serif; }
+.open { font-family: Verdana, sans-serif; }
+.sans { font-family: Monserrat, sans-serif; }
+.bold { font-family: Rokkitt, sans-serif; }
 
 * { 
 	font-size: 16px;
@@ -30,11 +30,14 @@ a {
 h1, h2, h3, h4, h5, h6 { .open; }
 	
 h1 {
-       font-size: 4em;
+	font-family: 'Rubik Mono One', sans-serif;
+       font-size: 5em;
 	position: relative;
-	color: fadeout(@lightblack, 15%);
+	color: @red;
 	word-wrap: break-word;
-	line-height: 1.5em;
+	font-weight: normal;
+	line-height: 2em;
+	text-shadow: -1px -1px 0 black;
 }
 h2 {
 	font-size: 3em;
